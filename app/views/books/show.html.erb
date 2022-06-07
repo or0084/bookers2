@@ -1,0 +1,26 @@
+<div class="show-item">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+     <%= render 'user_info', books: @books %>
+    </div>
+
+    <div class="col-md-8 offset-md-1">
+     <h2>Book detail</h2>
+
+     <table class="table">
+      <tbody>
+
+       <tr>
+        <td style="width: 5%"><%= link_to user_path(@book.id) do %><%= image_tag @book.user.get_profile_image(100,100) %><% end %></td>
+        <td style="width: 25%"><%= link_to book_path(@book.id) do %><%= @book.title %><% end %></td>
+        <td><%= @book.body %></td>
+       </tr>
+
+      </tbody>
+     </table>
+
+    </div>
+  </div>
+</div>
+</div>

@@ -1,24 +1,24 @@
-# README
+アプリケーションを作成してみよう２：課題
+・bookers2の作成
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+テーマ
+・ユーザー機能を持ち、読んだ本の感想を投稿するサイト
 
-Things you may want to cover:
+bookersの機能に加えて追加する機能
+・ユーザー名、メール、パスワードでユーザーの新規登録ができる
+・ログイン前とログイン後でヘッダーに表示されるリンクが変わる
+・ユーザーがログインしていない場合、ログイン画面だけが表示される
+・投稿データは投稿者のみ編集や削除ができる
 
-* Ruby version
+bookersの実装画面に加えて追加実装画面
+・About画面
+・サインアップ、サインイン画面
+・ユーザー画面：ユーザーごとの投稿された本を表示する画面
+・ユーザー一覧画面：ユーザーの一覧表示する画面
+・ユーザー編集画面：ユーザープロフィールを編集できる画面
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+その他
+・ログイン機能は「devise」を使用する
+・デザインは「Bootstrap」を使用する
+・モデル同士をアソシエーションする
+・FontAwesomeを使用してアイコンを適用する
