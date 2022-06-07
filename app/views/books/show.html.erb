@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-     <%= render 'user_info', books: @books %>
+     <%= render 'user_info', books: current_user %>
     </div>
 
     <div class="col-md-8 offset-md-1">
@@ -12,9 +12,14 @@
       <tbody>
 
        <tr>
-        <td style="width: 5%"><%= link_to user_path(@book.id) do %><%= image_tag @book.user.get_profile_image(100,100) %><% end %></td>
-        <td style="width: 25%"><%= link_to book_path(@book.id) do %><%= @book.title %><% end %></td>
-        <td><%= @book.body %></td>
+        <td style="width: 5%"><%= link_to user_path(@books.id) do %><%= image_tag @books.user.get_profile_image(100,100) %>
+        <%= @books.user.name %><% end %></td>
+        <td style="width: 25%"><%= link_to book_path(@books.id) do %><%= @books.title %><% end %></td>
+        <td><%= @books.body %></td>
+        <% if @books.user == current_user %>
+        <td><%= link_to "Edit", edit_book_path(@books.id), :class => "btn btn-sm btn-success" %></td>
+        <td><%= link_to "Destroy", book_path(@books), method: :delete, :class => "btn btn-sm btn-danger" %></td>
+        <% end %>
        </tr>
 
       </tbody>
