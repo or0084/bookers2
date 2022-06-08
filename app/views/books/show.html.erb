@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-     <%= render 'user_info', books: current_user %>
+     <%= render 'user_info', books: current_user, book: @book %>
     </div>
 
     <div class="col-md-8 offset-md-1">
@@ -18,7 +18,7 @@
         <td><%= @books.body %></td>
         <% if @books.user == current_user %>
         <td><%= link_to "Edit", edit_book_path(@books.id), :class => "btn btn-sm btn-success" %></td>
-        <td><%= link_to "Destroy", book_path(@books), method: :delete, :class => "btn btn-sm btn-danger" %></td>
+        <td><%= link_to "Destroy", book_path(@books), method: :delete, :class => "btn btn-sm btn-danger", "data-confirm" => "本当に削除しますか？" %></td>
         <% end %>
        </tr>
 
