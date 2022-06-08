@@ -32,17 +32,7 @@ body{
   word-break: break-word ;
 }
 
-.book-edit .book_title {
-  width: 475px;
-  height: 38px;
-}
-
-.form_group2{
-  width: 475px;
-  height: 62px;
-}
-
-.form_group3{
-  width: 120px;
-  height: 38px;
+p{
+  font-size:16px;
+  margin: 0 0 16px;
 }

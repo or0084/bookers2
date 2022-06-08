@@ -32,7 +32,7 @@ class UsersController < ApplicationController
 
 
   def user_params
-    params.require(:user).permit(:name, :introducion)
+    params.require(:user).permit(:name, :introducion, :profile_image)
   end
 
   def book_params
