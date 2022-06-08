@@ -20,10 +20,29 @@
   box-sizing: border-box;
 }
 
-.top .container{
-  max-width:720px;
+body{
+  width: 100%;
+}
+
+.container{
+  max-width:1140px;
 }
 
 .index-item td {
   word-break: break-word ;
+}
+
+.book-edit .book_title {
+  width: 475px;
+  height: 38px;
+}
+
+.form_group2{
+  width: 475px;
+  height: 62px;
+}
+
+.form_group3{
+  width: 120px;
+  height: 38px;
 }
