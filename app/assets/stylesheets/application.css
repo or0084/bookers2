@@ -36,3 +36,12 @@ p{
   font-size:16px;
   margin: 0 0 16px;
 }
+
+.error_explanation .h3{
+  margin: 0 0 8px;
+}
+
+ul {
+  margin: 0 0 16px;
+  padding: 0 0 0 40px;
+}
