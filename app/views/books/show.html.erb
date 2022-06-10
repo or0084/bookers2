@@ -1,4 +1,3 @@
-
 <div class="show-item">
 <div class="container">
   <div class="row">
@@ -11,7 +10,6 @@
 
      <table class="table">
       <tbody>
-
        <tr>
         <td style="width: 5%"><%= link_to user_path(@books.user_id) do %><%= image_tag @books.user.get_profile_image(100,100) %>
         <%= @books.user.name %><% end %></td>
@@ -22,11 +20,10 @@
         <td><%= link_to "Destroy", book_path(@books), method: :delete, :class => "btn btn-sm btn-danger", "data-confirm" => "本当に削除しますか？" %></td>
         <% end %>
        </tr>
-
       </tbody>
      </table>
-
     </div>
+
   </div>
 </div>
 </div>
